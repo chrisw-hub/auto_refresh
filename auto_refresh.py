@@ -1,6 +1,6 @@
 
 """
-Created in 2021
+Created in 2022
 author Ailis
 
 """
@@ -139,7 +139,7 @@ while keyboard.is_pressed('space') == False: #Long press space to stop
         print("Covenant Summons bought =",cont_coven)
         print("Mystic Summons bought =",cont_mystic)
         print("Refresh Done =",cont_refresh)
-        print("Systones spend =", cont_refresh*3)
+        print("Systones Spent =", cont_refresh*3)
         print("Time Spent =", time.time()-start, "secondes")
         print("")
 
