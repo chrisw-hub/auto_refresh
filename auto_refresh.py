@@ -140,7 +140,7 @@ while keyboard.is_pressed('space') == False and cont_refresh<1200: #Long press s
         print("Mystic Summons bought =",cont_mystic)
         print("Refresh Done =",cont_refresh)
         print("Systones Spent =", cont_refresh*3)
-        print("Time Spent =", time.time()-start, "secondes")
+        print("Time Spent =", int(time.time()-start), "secondes")
         print("")
 
     else :
