@@ -92,7 +92,7 @@ start=time.time()
 
 ##Loop
 
-while keyboard.is_pressed('space') == False: #Long press space to stop
+while keyboard.is_pressed('space') == False and cont_refresh<1200: #Long press space to stop
     
     coven_point=getlocation('covens.png',0.90)
     mystic_point=getlocation("mystics.png",0.90)
@@ -127,13 +127,13 @@ while keyboard.is_pressed('space') == False: #Long press space to stop
     if scroll_cont>=1 :
 
         locateandclick("refresh.png")
-        rdwait(0.2,0.3)
+        time.sleep(0.2)
         locateandclick("confirm.png") 
        
         scroll_cont=0
         intcont_mystic=0
         intcont_coven=0
-        rdwait(0.3,0.4)
+        time.sleep(0.50)
         cont_refresh+=1
 
         print("Covenant Summons bought =",cont_coven)
