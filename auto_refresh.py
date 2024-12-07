@@ -86,7 +86,7 @@ if active_window:
     top=active_window.top
     center=(left+width//2,top+height//2)
  
-print("active window dimension", width,height,top,left,center)
+#print("active window dimension", width,height,top,left,center)
 
 start=time.time()
 
