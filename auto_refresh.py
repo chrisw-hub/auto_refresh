@@ -90,9 +90,16 @@ print("active window dimension", width,height,top,left,center)
 
 start=time.time()
 
+import sys
+
+if len(sys.argv) > 1:
+    limit = int(sys.argv[1])
+else:
+    limit = 2000
+
 ##Loop
 
-while keyboard.is_pressed('space') == False and cont_refresh<1200: #Long press space to stop
+while keyboard.is_pressed('space') == False and cont_refresh<=limit: #Long press space to stop
     
     coven_point=getlocation('covens.png',0.90)
     mystic_point=getlocation("mystics.png",0.90)
@@ -139,8 +146,9 @@ while keyboard.is_pressed('space') == False and cont_refresh<1200: #Long press s
         print("Covenant Summons bought =",cont_coven)
         print("Mystic Summons bought =",cont_mystic)
         print("Refresh Done =",cont_refresh)
-        print("Systones Spent =", cont_refresh*3)
-        print("Time Spent =", int(time.time()-start), "secondes")
+        print("Skystones Spent =", cont_refresh*3)
+        print("Time Spent =", int(time.time()-start), "seconds")
+        print("Gold Spent =", cont_coven*184000+cont_mystic*280000)
         print("")
 
     else :
