@@ -1,5 +1,5 @@
 
-##How to set-up the macro
+**How to set-up the macro**
 
 #Get the program
 
