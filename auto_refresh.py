@@ -45,7 +45,7 @@ def locateandclick(path,conf=0.9):
         point=pyautogui.locateCenterOnScreen(path,confidence=conf)
         pyautogui.click(x=point[0], y=point[1], clicks=2, interval=0.08, button="left")
     except :
-        print("Image "+ path + " not found. Could not click" )
+        #print("Image "+ path + " not found. Could not click" )
         pass
 
 def getlocation(path,conf=0.9):
@@ -53,7 +53,7 @@ def getlocation(path,conf=0.9):
         point=pyautogui.locateCenterOnScreen(path,confidence=conf)
         return point
     except :
-        print("Image "+path +" not found.")
+        #print("Image "+path +" not found.")
         pass
 
 def rdwait(a,b): #procédure qui fait attendre une valeur de tps aléatoire entre a et b (a,b des réels)
