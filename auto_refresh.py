@@ -107,8 +107,9 @@ while keyboard.is_pressed('space') == False and cont_refresh<=limit: #Long press
 #Checks for covenant
     if intcont_coven==0 and coven_point is not None :
  
-        point=getlocation('buy_cov_bis.png',0.96)
-        pyautogui.click(x=point[0],y=point[1]+height//20, clicks=2, interval=0.08, button="left")
+        #point=getlocation('buy_cov_bis.png',0.95)
+        point=coven_point
+        pyautogui.click(x=point[0]+width//2.3,y=point[1]+height//23, clicks=2, interval=0.08, button="left")
         print("Covenants located")
         time.sleep(0.2)
         locateandclick('buy_button_cov.png',0.96)
@@ -119,8 +120,9 @@ while keyboard.is_pressed('space') == False and cont_refresh<=limit: #Long press
 #Checks for mystic
     if mystic_point is not None and intcont_mystic==0:
         
-        point=getlocation('buy_mystic_bis.png',0.96)
-        pyautogui.click(x=point[0],y=point[1]+height//20, clicks=2, interval=0.08, button="left")
+        #point=getlocation('buy_mystic_bis.png',0.95)
+        point=mystic_point
+        pyautogui.click(x=point[0]+width//2.3,y=point[1]+height//23, clicks=2, interval=0.08, button="left")
         print("Mystics located")
         time.sleep(0.2)
         locateandclick('buy_button_myst.png',0.96)
